@@ -1,4 +1,5 @@
-
+matrix:
+include:
 -language: c
  sudo: false # only for faster builds
  compiler: 
@@ -6,5 +7,5 @@
  - clang
  - gcc
  script:
- - gcc -o test test.c // we can use gcc instead of clang too
+ - gcc -o test main.c // we can use gcc instead of clang too
  - ./test 
